@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  demo-db:
+    container_name: demo-db
+    image: postgres:9.6.11
+    environment:
+      - POSTGRES_DB=demo
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
